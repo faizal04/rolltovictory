@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rolltovictory</title>
+    <link rel="icon" href="./dice-30454.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>welcome to this game </h1>
+    <button class="rules-btn btn">rules</button>
+    <div class="rules hidden">
+        <ul>
+            <li>
+                <p>A new game must be initiated when a player achieves victory. The game will remain inactive until a
+                    new session is started.
+                </p>
+            </li>
+            <li>
+                <p>The first player to reach a score of 100 will be declared the winner.</p>
+            </li>
+            <li>
+                <p>The displayed score is not final; to accumulate points, a player must choose to "hold" their current
+                    score.</p>
+            </li>
+            <li>
+                <p>To add the current score to the overall score, the player needs to opt to "hold" their accumulated
+                    points.</p>
+            </li>
+            <li>
+                <p>If a player rolls a dice and lands on the number 1, they will lose their current score, and the
+                    active turn will pass to the other player</p>
+            </li>
+        </ul>
+    </div>
+    <div class="main-section">
+        <button class="roll btn">roll</button>
+        <button class="hold btn">hold</button>
+        <button class="new-game btn">new game</button>
+
+        <h1 class="score hidden">1</h1>
+        <div class="player0 active--player">
+            <h1>player 1</h1>
+            <h2 class="highscore0">score:0</h2>
+            <h1 class="winning0">win</h1>
+
+            <div class="currentscore-style">
+                <h3>current score</h3>
+                <h2 id="p0" class="style">0</h2>
+            </div>
+
+        </div>
+        <div class="player1 win ">
+            <h1>player 2</h1>
+            <h2 class="highscore1">score:0</h2>
+            <h1 class="winning1">win</h1>
+            <div class="currentscore-style">
+                <h3>current score</h3>
+                <h2 id="p1" class="style">0</h2>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
